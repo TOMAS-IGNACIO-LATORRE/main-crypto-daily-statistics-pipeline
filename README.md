@@ -32,6 +32,12 @@ Para todas las fuentes, se utilizó código en Python para obtener datos de las 
 
 > Es importante destacar que esta API de CoinGecko proporciona la información del día anterior para cada tipo de cambio, no datos históricos de precios. Si se desea obtener datos de días anteriores, se debe modificar el parámetro days ubicado en la carpeta staging en el archivo `api_extract_data.py`.
 
+A nivel técnico, en el DAG se cuenta con función `run_staging` que se encarga de ejecutar esta extracción. Esta a su vez, llamada a dos funciones:
+- 
+
+-
+
+
 Podemos visualizar este proceso en el siguiente esquema:
 
 ![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Source_to_Staging.png)
@@ -40,7 +46,7 @@ Podemos visualizar este proceso en el siguiente esquema:
 
 ### 📁 Silver hacia Gold
 
-### Alertas - email
+### 🚨 Alertas - email
 
 ## 🛠️ Implementación
 
