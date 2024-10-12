@@ -167,11 +167,18 @@ C) **insert_daily_crypto_prices:** Insertar o actualizar los precios diarios de 
 
 
 
-
-
 ### 📁 Silver hacia Gold
 
+En este proceso, se hace un análisis por el día entero de las cotizaciones de las principales criptomonedas. Esto permite tener un parametro de las principales decisiones
+
 ### 🚨 Alertas - email
+
+Nos indica si la ejecución del pipeline de Airflow fue exitosa o si en alguno de los pasos anteriores, nos encontramos con algún problema. Podemos encontrarla dentro del DAG con el task_id= `send_email`.
+
+A continuación adjuntamos dos ejemplos:
+
+- ✅ Ejecución exitosa:
+
 
 ## 🔔 Futuras Mejoras
 - Optimización de la ingestión de datos históricos con procesamiento distribuido.
