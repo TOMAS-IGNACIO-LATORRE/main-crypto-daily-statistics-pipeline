@@ -129,7 +129,7 @@ A nivel técnico, en el DAG se cuenta con función `run_staging` que se encarga 
 
 Podemos visualizar este proceso en el siguiente esquema:
 
-
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Source_to_Staging.png)
 
 ### 📁 Staging hacia Silver
 
