@@ -44,7 +44,7 @@ PORT_REDSHIFT=your_port
 DBNAME_REDSHIFT=your_dbname
 
 # Email-Alerting
-ALERT_EMAIL = 'complete_your_email' # Se necesita que sea de gmail
+ALERT_EMAIL = 'complete_your_email' # El proceso está configurado para que sea gmail unicamente
 ```
 
 #### 4. Correr Makefile 
@@ -56,8 +56,37 @@ make all
 ```
 #### 5. Acceder a la UI de Airflow
 
-Visita http://localhost:8080 en tu navegador. 
+Visita http://localhost:8080 en tu navegador. En el mismo vamos a tener que completar lo siguiente:
 
+`usuario`: airflow
+
+`Contraseña`: airflow
+
+Podemos visualizarlo con más atención en este imagen:
+
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/airflow_2.png)
+
+Debemos prender encender el DAG que diga `crypto_price_dags`. A continuación, debemos configurar las variables de entorno para nuestro mail de gmail, para eso:
+
+Admin > + Connections > + Add new record
+
+En el mismo, se deben completar los siguientes registros:
+
+ - `Connection Id`: smtp_default
+ - `Connection Type`: Email
+ - `Host`: smtp.gmail.com
+ - `Login`: <Completar aqui su email>
+ - `Contraseña`: Para obtener la contraseña, deben generar una contraseña para aplicaciones en gmail. Para eso, deben acceder a https://myaccount.google.com/apppasswords y generar una contraseña
+ - `Port`: 587
+ - `Extra`: 
+{
+  "timeout": 30,
+  "retry_limit": 5,
+  "disable_tls": false,
+  "disable_ssl": true
+}
+
+> Si quieren aplicarlo para mails de outlook pueden visitar el siguiente video https://www.youtube.com/watch?v=D18G7hW8418 que me ayudo a aprender esta configuración
 
 ## 🌐 Introducción
 
