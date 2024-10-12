@@ -21,7 +21,7 @@ Se debe tener instalado las siguientes herramientas:
 Los pasos a seguir son los siguientes:
  #### 1. Clonar este repositorio
    ```bash
-    git clone [https://github.com/diegorojasucv/argentine-exchange-rates-elt.git](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline.git)
+    git clone https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline.git
   ```
  #### 2. Navegar en este directorio:
 ```bash
