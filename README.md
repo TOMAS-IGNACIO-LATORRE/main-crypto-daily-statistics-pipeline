@@ -44,7 +44,7 @@ PORT_REDSHIFT=your_port
 DBNAME_REDSHIFT=your_dbname
 
 # Email-Alerting
-ALERT_EMAIL = 'complete_your_email' # El proceso está configurado para que sea gmail unicamente
+ALERT_EMAIL = 'complete_your_email' # El proceso envia un mail de alerta para avisar status del pipeline, unicamente admite gmail
 ```
 
 #### 4. Correr Makefile 
