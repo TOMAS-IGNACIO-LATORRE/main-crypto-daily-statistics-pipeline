@@ -5,6 +5,7 @@
 1. [Introducción](#Introducción)
 2. [Implementación](#Implementación) 
 3. [Pipeline de datos](#Pipeline-de-datos)
+4. [Futuras Mejoras](#Futuras-Mejoras)
 
 
 ## 🌐 Introducción
@@ -133,7 +134,7 @@ Podemos visualizar este proceso en el siguiente esquema:
 
 ### 📁 Staging hacia Silver
 
-Se encarga de transformar e enriquecer los datos provenientes desde las fuentes de datos. Se emplea lo indicado en el siguiente pipeline:
+Se encarga de transformar e enriquecer los datos provenientes desde las fuentes de datos cargando en Amazon Redshift. Se emplea lo indicado en el siguiente pipeline:
 
 ![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Staging_to_Silver.png)
 
