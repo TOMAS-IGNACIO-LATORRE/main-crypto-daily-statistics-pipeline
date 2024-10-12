@@ -36,6 +36,9 @@ cd main-crypto-daily-statistics-pipeline
 ```
 
 #### 3. Configurar las variables del entorno en un archivo `.env`:
+ 
+-  [CoinMarkerCap API](https://coinmarketcap.com/api/documentation/v1/): Esta API se accede mediante una API KEY, es necesario dirigirse a este [link](https://coinmarketcap.com/api/), registrarse y de esta manera, podemos tener acceso a su API KEY de forma gratuita.
+
 ```bash
 # UID AIRFLOW
 AIRFLOW_UID=50000 # Colocar siempre mismo valor
