@@ -75,7 +75,7 @@ En el mismo, se deben completar los siguientes registros:
  - `Connection Id`: smtp_default
  - `Connection Type`: Email
  - `Host`: smtp.gmail.com
- - `Login`: <Completar aqui su email>
+ - `Login`: 'complete_your_email'
  - `Contraseña`: Para obtener la contraseña, deben generar una contraseña para aplicaciones en gmail. Para eso, deben acceder a https://myaccount.google.com/apppasswords y generar una contraseña
  - `Port`: 587
  - `Extra`: 
