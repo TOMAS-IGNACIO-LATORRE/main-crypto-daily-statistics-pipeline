@@ -144,18 +144,17 @@ A nivel técnico, en el DAG se cuenta con función `run_silver`. Este proceso ut
 
 - `parquet_Silver.py`: Este script en Python carga y actualiza archivos Parquet que contienen datos relacionados con precios diarios de criptomonedas, información de criptomonedas y fechas. En resumen hace las siguientes cosas:
 
-A) **Carga de Archivos Parquet:** Se define una función load_parquet_files que toma una fecha como argumento y retorna tres DataFrames: precios diarios de criptomonedas, datos de criptomonedas y un DataFrame de fechas.
-Los archivos Parquet se cargan desde rutas específicas que incluyen la fecha proporcionada.
+   A) Carga de Archivos Parquet: Se define una función load_parquet_files que toma una fecha como argumento y retorna tres DataFrames: precios diarios de criptomonedas, datos de criptomonedas y un DataFrame de fechas.Los archivos Parquet se cargan desde rutas específicas que incluyen la fecha proporcionada.
 
-B) **Renombrado de Columnas y Reemplazo de Valores:** Al cargar el DataFrame de precios diarios, la columna stock_symbol se renombra a symbol, y se reemplazan ciertos valores en esta columna para estandarizar la nomenclatura (por ejemplo, 'bitcoin' se cambia a 'BTC').
+  B) Renombrado de Columnas y Reemplazo de Valores: Al cargar el DataFrame de precios diarios, la columna stock_symbol se renombra a symbol, y se reemplazan ciertos valores en esta columna para estandarizar la nomenclatura (por ejemplo, 'bitcoin' se cambia a 'BTC').
 
-C) **Actualización del Archivo Plata de Precios Diarios:** Si existe un archivo de precios diarios en la carpeta "Silver", se carga y se verifica si hay nuevas fechas en el DataFrame cargado. Si hay nuevas fechas, se concatenan y se guardan de nuevo en el archivo Parquet; de lo contrario, se informa que no hay nuevos datos.
+  C) Actualización del Archivo Plata de Precios Diarios: Si existe un archivo de precios diarios en la carpeta "Silver", se carga y se verifica si hay nuevas fechas en el DataFrame cargado. Si hay nuevas fechas, se concatenan y se guardan de nuevo en el archivo Parquet; de lo contrario, se informa que no hay nuevos datos.
 
-D) **Actualización del Archivo Plata de Datos de Criptomonedas:** De manera similar, se verifica si el archivo de datos de criptomonedas existe y se actualiza con nuevas filas. Si hay filas nuevas, se concatenan y se guardan.
+  D) Actualización del Archivo Plata de Datos de Criptomonedas: De manera similar, se verifica si el archivo de datos de criptomonedas existe y se actualiza con nuevas filas. Si hay filas nuevas, se concatenan y se guardan.
 
-E) **Generación de un DataFrame de Fechas:** Se crea un DataFrame dim_date_df que contiene fechas únicas extraídas de los precios diarios, añadiendo columnas para el año, mes, número de semana, día, y otras métricas relevantes.
+  E) Generación de un DataFrame de Fechas: Se crea un DataFrame dim_date_df que contiene fechas únicas extraídas de los precios diarios, añadiendo columnas para el año, mes, número de semana, día, y otras métricas relevantes.
 
-F) **Actualización del Archivo Plata de Fechas:** Se realiza una verificación y actualización del archivo de la tabla de fechas de manera similar a las anteriores, añadiendo fechas nuevas si es necesario.
+  F) Actualización del Archivo Plata de Fechas: Se realiza una verificación y actualización del archivo de la tabla de fechas de manera similar a las anteriores, añadiendo fechas nuevas si es necesario.
 
 - `table_insert_sql.py`: Este script en Python se encarga de la inserción y actualización de datos relacionados con criptomonedas en una base de datos, utilizando el patrón Slowly Changing Dimension (SCD) Tipo 2 y operaciones de inserción para datos de fechas y precios diarios. Teniendo las siguientes funciones: 
 
