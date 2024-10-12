@@ -47,11 +47,11 @@ AIRFLOW_UID=50000 # Colocar siempre mismo valor
 api_key_coinmarketcap = 'complete_your_api_key'
 
 # DB Redshift 
-USER_REDSHIFT=your_username
-PASSWORD_REDSHIFT=your_password
 HOST_REDSHIFT=your_host
 PORT_REDSHIFT=your_port
 DBNAME_REDSHIFT=your_dbname
+USER_REDSHIFT=your_username
+PASSWORD_REDSHIFT=your_password
 
 # Email-Alerting
 ALERT_EMAIL = 'complete_your_email' # El proceso envia un mail de alerta para avisar status del pipeline, unicamente admite gmail
