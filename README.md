@@ -2,7 +2,7 @@
 
 ## 📚 Tabla de contenidos
 
-1. [Introducción](#Introducción)
+1. [Introducción](#-introducción)
 2. [Implementación](#Implementación) 
 3. [Pipeline de datos](#Pipeline-de-datos)
 4. [Futuras Mejoras](#Futuras-Mejoras)
