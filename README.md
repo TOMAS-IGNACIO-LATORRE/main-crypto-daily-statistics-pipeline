@@ -1,6 +1,5 @@
 # main-crypto-daily-statistics-pipeline
 
-
 ## 📚 Tabla de contenidos
 
 1. [Introducción](#Introducción)
@@ -20,7 +19,10 @@ En este proceso de ETL, se utilizó la visión de Databricks conocido como [Lake
 ![](https://blog.bismart.com/hs-fs/hubfs/Arquitectura_Medallion_Pasos.jpg?width=1754&height=656&name=Arquitectura_Medallion_Pasos.jpg)
 
 ### 📁 Fuente de datos hacia Staging
-Para todas las fuentes, se utilizó código en Python para obtener datos de las APIs. Entre las APIs utiza
+Para todas las fuentes, se utilizó código en Python para obtener datos de las APIs. Estas son las siguientes:
+  -  [CoinMarkerCap API](https://coinmarketcap.com/api/documentation/v1/): Desde esta fuente de datos obtenemos 
+
+> Es importante destacar que esta APIs proporcionan la información del día anterior para cada tipo de cambio, no datos históricos de precios. Si se desea obtener datos de días anteriores, se debe modificar el parámetro days ubicado en la carpeta staging en el archivo `api_extract_data.py`.
 
 ### 📁 Staging hacia Silver
 
