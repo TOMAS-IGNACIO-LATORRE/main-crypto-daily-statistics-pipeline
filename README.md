@@ -177,7 +177,10 @@ Nos indica si la ejecución del pipeline de Airflow fue exitosa o si en alguno d
 A continuación adjuntamos dos ejemplos:
 
 - ✅ Ejecución exitosa:
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/email_exitoso.png)
 
+- ❌Ejecución fallida:
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Errores_en_el_mail.png)
 
 ## 🔔 Futuras Mejoras
 - Optimización de la ingestión de datos históricos con procesamiento distribuido.
