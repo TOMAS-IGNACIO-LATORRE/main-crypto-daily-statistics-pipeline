@@ -133,5 +133,6 @@ Podemos visualizar este proceso en el siguiente esquema:
 
 ### 🚨 Alertas - email
 
-
-
+## ✨ Futuras Mejoras
+- Optimización de la ingestión de datos históricos con procesamiento distribuido.
+- Buscar APIS para poder incorporar el volumen del mercado diario de cada una de las criptomonedas y aprovechar para sacar métricas de esta variable numérica.
