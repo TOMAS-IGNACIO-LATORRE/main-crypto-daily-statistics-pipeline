@@ -58,4 +58,13 @@ Se debe tener instalado las siguientes herramientas:
 - Airflow
 - AWS Redshift
 
+<<<<<<< HEAD
 ## Setup
+=======
+## Setup
+
+
+
+
+
+>>>>>>> 9357680846939beb7651a13a1f637d6d614eadd2
