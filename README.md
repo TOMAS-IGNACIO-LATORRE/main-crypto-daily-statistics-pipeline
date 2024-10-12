@@ -18,6 +18,46 @@ Se debe tener instalado las siguientes herramientas:
 - AWS Redshift
 
 ## Setup
+Los pasos a seguir son los siguientes:
+ #### 1. Clonar este repositorio
+   ```bash
+    git clone [https://github.com/diegorojasucv/argentine-exchange-rates-elt.git](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline.git)
+  ```
+ #### 2. Navegar en este directorio:
+```bash
+cd main-crypto-daily-statistics-pipeline
+```
+
+#### 3. Configurar las variables del entorno en un archivo `.env`:
+```bash
+# UID AIRFLOW
+AIRFLOW_UID=50000 # Colocar siempre mismo valor
+
+# APIs keys
+api_key_coinmarketcap = 'complete_your_api_key'
+
+# DB Redshift 
+USER_REDSHIFT=your_username
+PASSWORD_REDSHIFT=your_password
+HOST_REDSHIFT=your_host
+PORT_REDSHIFT=your_port
+DBNAME_REDSHIFT=your_dbname
+
+# Email-Alerting
+ALERT_EMAIL = 'complete_your_email' # Se necesita que sea de gmail
+```
+
+#### 4. Correr Makefile 
+
+Este proceso efectúa una automatización del pipeline en lo que se refiere a la construcción de las imagenes de Docker, levantar los servicios de Docker compose y la creación de directorios junto con la configuración del entorno de Airflow.
+
+```bash
+make all
+```
+#### 5. Acceder a la UI de Airflow
+
+Visita http://localhost:8080 en tu navegador. 
+
 
 ## 🌐 Introducción
 
