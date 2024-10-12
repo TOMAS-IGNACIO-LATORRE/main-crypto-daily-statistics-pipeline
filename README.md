@@ -166,10 +166,15 @@ B) **insert_date_data:** Insertar registros de fechas en la tabla dim_date sin d
 C) **insert_daily_crypto_prices:** Insertar o actualizar los precios diarios de criptomonedas en la tabla daily_crypto_prices.
 
 
-
 ### 📁 Silver hacia Gold
 
-En este proceso, se hace un análisis por el día entero de las cotizaciones de las principales criptomonedas. Esto permite tener un parametro de las principales decisiones
+En este proceso, se hace un análisis por el día entero de las cotizaciones de las principales criptomonedas. Esto permite tener algunos KPIs que permitan tener una vista rápida de los rendimientos del día de ejecución. Se aplica por medio del siguiente script:
+
+- `crypto_volability_and_performance.py`: El script calcula y registra métricas financieras diarias para criptomonedas. Primero, verifica si ya existen datos para una fecha específica en la tabla crypto_volatility_and_performance. Luego, obtiene los precios diarios de criptomonedas y calcula métricas como volatilidad, retorno y rango. Finalmente, inserta los resultados en la base de datos. Esto permite analizar el rendimiento de las criptomonedas de manera efectiva.
+
+A su vez, con la siguiente visual muestra este traspaso desde Silver hacia Gold:
+
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Silver_to_Gold.png)
 
 ### 🚨 Alertas - email
 
@@ -185,4 +190,4 @@ A continuación adjuntamos dos ejemplos:
 
 ## 🔔 Futuras Mejoras
 - Optimización de la ingestión de datos históricos con procesamiento distribuido.
-- Buscar APIS para poder incorporar el volumen del mercado diario de cada una de las criptomonedas y aprovechar para sacar métricas de esta variable numérica.
+- Buscar APIs para poder incorporar el volumen del mercado diario de cada una de las criptomonedas y aprovechar para sacar métricas de esta variable numérica.
