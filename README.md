@@ -3,8 +3,21 @@
 ## 📚 Tabla de contenidos
 
 1. [Introducción](#Introducción)
-2. [Pipeline de datos](#Pipeline-de-datos)
-3. [Implementación](#Implementación)
+2. [Implementación](#Implementación) 
+3. [Pipeline de datos](#Pipeline-de-datos)
+
+## 🛠️ Implementación
+
+###  Requisitos previos
+
+Se debe tener instalado las siguientes herramientas:
+
+- Python
+- Docker Desktop
+- Airflow
+- AWS Redshift
+
+## Setup
 
 ## 🌐 Introducción
 
@@ -47,24 +60,5 @@ Podemos visualizar este proceso en el siguiente esquema:
 
 ### 🚨 Alertas - email
 
-## 🛠️ Implementación
-
-###  Requisitos previos
-
-Se debe tener instalado las siguientes herramientas:
-
-- Python
-- Docker Desktop
-- Airflow
-- AWS Redshift
-
-<<<<<<< HEAD
-## Setup
-=======
-## Setup
 
 
-
-
-
->>>>>>> 9357680846939beb7651a13a1f637d6d614eadd2
