@@ -155,7 +155,9 @@ F) **Actualización del Archivo Plata de Fechas:** Se realiza una verificación 
 - `table_insert_sql.py`: Este script en Python se encarga de la inserción y actualización de datos relacionados con criptomonedas en una base de datos, utilizando el patrón Slowly Changing Dimension (SCD) Tipo 2 y operaciones de inserción para datos de fechas y precios diarios. Teniendo las siguientes funciones: 
 
 A) **insert_crypto_description_scd2:**   Implementar SCD Tipo 2 en la tabla crypto_description, lo que permite mantener un historial de los cambios en los registros de criptomonedas.
+
 B) **insert_date_data:** Insertar registros de fechas en la tabla dim_date sin duplicar los existentes tomando en cuenta todas las fechas para que si la persona quiere cambiar para traer más fechas, no duplique las fechas.
+
 C) **insert_daily_crypto_prices:** Insertar o actualizar los precios diarios de criptomonedas en la tabla daily_crypto_prices.
 
 
