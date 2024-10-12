@@ -133,7 +133,12 @@ Podemos visualizar este proceso en el siguiente esquema:
 
 ### 📁 Staging hacia Silver
 
-Se encarga de transformar e enriquecer los datos provenientes desde las fuentes de datos. A nivel técnico, en el DAG se cuenta con función `run_silver`. Este proceso utiliza las siguientes funciones:
+Se encarga de transformar e enriquecer los datos provenientes desde las fuentes de datos. Se emplea lo indicado en el siguiente pipeline:
+
+![]([https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Source_to_Staging.png](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Staging_to_Silver.png))
+
+
+A nivel técnico, en el DAG se cuenta con función `run_silver`. Este proceso utiliza las siguientes funciones:
 
 - `create_tables_redshift.py`: Este script crea tablas en una base de datos de Amazon Redshift, asegurándose de que cada tabla se cree solo si no existe previamente. Las tablas incluyen crypto_description, dim_date, daily_crypto_prices, y crypto_volatility_and_performance, las cuales están diseñadas para almacenar información sobre criptomonedas, datos de precios diarios y métricas de rendimiento. Además, el script utiliza claves foráneas para establecer relaciones entre las tablas.
 
