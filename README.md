@@ -135,7 +135,7 @@ Podemos visualizar este proceso en el siguiente esquema:
 
 Se encarga de transformar e enriquecer los datos provenientes desde las fuentes de datos. Se emplea lo indicado en el siguiente pipeline:
 
-![]([https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Source_to_Staging.png](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Staging_to_Silver.png))
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Staging_to_Silver.png)
 
 
 A nivel técnico, en el DAG se cuenta con función `run_silver`. Este proceso utiliza las siguientes funciones:
