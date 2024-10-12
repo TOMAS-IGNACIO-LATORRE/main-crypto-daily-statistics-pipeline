@@ -97,12 +97,6 @@ Para finalizar, bebemos prender encender el DAG que diga `crypto_price_dags` y e
 
 > Si quieren aplicarlo para mails de outlook pueden visitar el siguiente video https://www.youtube.com/watch?v=D18G7hW8418 que me ayudo a aprender esta configuración
 
-## 🌐 Introducción
-
-Este proyecto se encarga de la implementación de un pipeline ETL (Extract, Transform, Load)  diseñado para obtener las cotizaciones de las principales criptomonedas por medio de extracciones diarias del día anterior. El pipeline utiliza ![Docker](https://img.shields.io/badge/Docker-blue?logo=docker&logoColor=white) para la contenerización, ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-green?logo=apache-airflow&logoColor=white) para la orquestación, ![Amazon Redshift](https://img.shields.io/badge/Amazon%20Redshift-red?logo=amazon-redshift&logoColor=white) como almacenamiento de datos y cómputo. A su vez, se utiliza ![Python](https://img.shields.io/badge/Python-blue?logo=python&logoColor=white) como lenguaje principal a la hora de gestionar el pipeline extrayendo datos de APIs financieras(CoinGecko y CoinMarketCap), transformando en una etapa posterior y cargando en bases de datos para su uso analítico.
-
-El objetivo principal de este proyecto es proporcionar un análisis diario de las cotizaciones de las criptomonedas más relevantes, obteniendo los datos del día anterior finalizado. A medida que las criptomonedas ganan popularidad y su uso se expande, es esencial monitorear sus precios y tendencias. Este análisis ayuda a los inversores y a otros agentes económicos a tomar decisiones informadas en un entorno altamente volátil.
-
 ## 📈 Pipeline de datos
 
 En este proceso de ETL, se utilizó la visión de Databricks conocido como [Lakehouse](https://www.databricks.com/glossary/data-lakehouse). En esta visión, se implementa de la siguiente forma:
