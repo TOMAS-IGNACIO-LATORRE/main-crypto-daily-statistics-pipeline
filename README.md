@@ -47,7 +47,9 @@ Para todas las fuentes, se utilizó código en Python para obtener datos de las 
 
 A nivel técnico, en el DAG se cuenta con función `run_staging` que se encarga de ejecutar esta extracción. Esta a su vez, llamada a dos funciones:
 
-- 
+- `api_extract_data.py`: El archivo contiene dos funciones principales para interactuar con las APIs de CoinGecko y CoinMarketCap. La primera función, get_crypto_ohlc_data, obtiene los precios OHLC de una criptomoneda para una fecha específica, organizando los datos en un DataFrame de pandas. La segunda función, create_crypto_table, extrae información descriptiva sobre una criptomoneda, manejando errores de solicitudes excesivas y asegurando una recuperación adecuada de datos.
+
+- `parquet_staging.py`: El archivo define una función llamada parquet_create_staging, que se encarga de crear archivos Parquet para los precios diarios de criptomonedas y sus perfiles. Utiliza las funciones get_crypto_ohlc_data y create_crypto_table para obtener datos de criptomonedas, concatenando la información en DataFrames de pandas y manejando excepciones si no se recuperan datos válidos. Al final, guarda los DataFrames en archivos Parquet en una ubicación específica, asegurando que se creen exitosamente.
 
 
 Podemos visualizar este proceso en el siguiente esquema:
