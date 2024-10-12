@@ -74,7 +74,7 @@ Visita http://localhost:8080 en tu navegador. En el mismo vamos a tener que comp
 
 Podemos visualizarlo con más atención en este imagen:
 
-![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Source_to_Staging.png)
+![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Source_to_Staging_Visual.png)
 
 A continuación, debemos configurar las variables de entorno para nuestro mail de gmail, para eso:
 
