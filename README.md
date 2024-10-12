@@ -66,7 +66,7 @@ Podemos visualizarlo con más atención en este imagen:
 
 ![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/airflow_2.png)
 
-Debemos prender encender el DAG que diga `crypto_price_dags`. A continuación, debemos configurar las variables de entorno para nuestro mail de gmail, para eso:
+A continuación, debemos configurar las variables de entorno para nuestro mail de gmail, para eso:
 
 Admin > + Connections > + Add new record
 
@@ -85,6 +85,8 @@ En el mismo, se deben completar los siguientes registros:
   "disable_tls": false,
   "disable_ssl": true
 }
+
+Para finalizar, bebemos prender encender el DAG que diga `crypto_price_dags` y esperar a las 00:00:00 del día siguiente para que corra o ejecutar manualmente el mismo.
 
 > Si quieren aplicarlo para mails de outlook pueden visitar el siguiente video https://www.youtube.com/watch?v=D18G7hW8418 que me ayudo a aprender esta configuración
 
