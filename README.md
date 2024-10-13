@@ -189,5 +189,5 @@ A continuación adjuntamos dos ejemplos:
 ![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Errores_en_el_mail.png)
 
 ## 🔔 Next Steps
-- Optimización de la ingestión de datos históricos con procesamiento distribuido.
+- Optimización del pipeline utilizando Pyspark y procesamiento distribuido.
 - Buscar APIs para poder incorporar el volumen del mercado diario de cada una de las criptomonedas y aprovechar para sacar métricas de esta variable numérica.
