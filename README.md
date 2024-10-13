@@ -4,7 +4,7 @@
 
 1. [Introducción](#-introducción)
 2. [Implementación](#%EF%B8%8F-implementación) 
-3. [Pipeline de datos](#-pipeline-de-dato)
+3. [Pipeline de datos](#-pipeline-de-datos)
 4. [Futuras Mejoras](#Futuras-Mejoras)
 
 
