@@ -5,7 +5,7 @@
 1. [Introducción](#-introducción)
 2. [Implementación](#%EF%B8%8F-implementación) 
 3. [Pipeline de datos](#-pipeline-de-datos)
-4. [Futuras Mejoras](#-futuras-mejoras)
+4. [Next Steps](#-next-steps)
 
 
 ## 🌐 Introducción
