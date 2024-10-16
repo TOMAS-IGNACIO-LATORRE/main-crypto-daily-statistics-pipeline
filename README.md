@@ -50,6 +50,7 @@ api_key_coinmarketcap = 'complete_your_api_key'
 # DB Redshift 
 HOST_REDSHIFT=your_host
 PORT_REDSHIFT=your_port
+REDSHIFT_SCHEMA=your_schema
 DBNAME_REDSHIFT=your_dbname
 USER_REDSHIFT=your_username
 PASSWORD_REDSHIFT=your_password
@@ -189,5 +190,7 @@ A continuación adjuntamos dos ejemplos:
 ![](https://github.com/TOMAS-IGNACIO-LATORRE/main-crypto-daily-statistics-pipeline/blob/main/Errores_en_el_mail.png)
 
 ## 🔔 Next Steps
-- Optimización del pipeline utilizando Pyspark y procesamiento distribuido.
+
+- Agregar en el envío de mail que, en caso de ser exitosa la corrida en Airflow, te muestre las principales métricas de las criptomonedas analizadas, este dato se puede obtener de los cálculos efectuados en la tabla en gold llamada crypto_volatility_and_performance.
+
 - Buscar APIs para poder incorporar el volumen del mercado diario de cada una de las criptomonedas y aprovechar para sacar métricas de esta variable numérica.
